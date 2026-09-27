@@ -1,0 +1,46 @@
+// --- BUTTERS TERMINAL CORE ---
+import ButtersMain()
+import ButtersTerminal()
+
+pstring WelcomeMessage 'Fluff Off'
+pstring NiceMessage 'You Smell'
+pstring ReallyNiceMessage 'like a bum'
+
+
+// Basic Terminal Usage
+terminal.start {
+    terminal.newconsole
+    terminal.userinput = true
+    terminal.questionseq {
+        questionseq.questionButter 'WelcomeMessage, how old is a cat?',
+        questionseq.questionStink 'NiceMessage, ReallyNiceMessage.'
+    }
+
+    terminal.finished
+}
+
+// Advanced Terminal Usage
+
+// Terminal Function Usage
+
+pfunc TerminalFunction() {
+    terminal.start {
+        terminal.newconsole
+        terminal.userinput = false
+        terminal.textcoding {
+            textcoding.text1 'Starting...',
+            terminal.wait(1)
+            textcoding.combind {
+                'Loading Scripts...',
+                'Loading Folders...',
+                'Loading Fivem Server...'
+            }
+        }
+
+        terminal.wait(1)
+        terminal.message 'Press e to exit the terminal'
+        terminal.exitkey 'e'
+    }
+}
+
+run.pfunc(TerminalFunction())

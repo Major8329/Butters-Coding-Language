@@ -1,0 +1,39 @@
+// Main Code Formation
+
+import ButtersMain() // Imports are for things like extra stuff people coding examples from other langauges CSHARP: using System; is a example but import is used
+
+
+have Litterbox {
+    pint '1234' // pint is a number p is en extra for int
+    pchar 'Meow' // this is a char with p extra 
+    pstring 'this is a test' // this is string with p added
+    pbool 'this is a test' // bool with a extra p added
+
+    // Math
+    + 'addition',
+    - 'subtraction', 
+    * 'mulitplication',
+    / 'divison'
+
+    // Shortaners
+    'ad' // Addition
+    'sb' // Subtraction
+    'mp' // Mulitplication
+    'dv' // Divison
+
+    // Examples for it 
+    // Pint Butters 15
+    // Math Problem: Butters ab 2 mp 5 dv 2 sb 10
+    // Tradition Math Problem: Butters + 2 * 5 / 2 - 10
+
+    // Console
+    puconsole.text'hello world'
+        return bts // using that checks for syntax errors
+
+    // statments 
+
+    pbool CoreBool 'CoreButters'
+
+    pif CoreBool
+pthen {}
+}

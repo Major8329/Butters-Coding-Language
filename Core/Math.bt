@@ -1,0 +1,74 @@
+// --- BUTTERS MATH CORE --- 
+
+import ButtersMain() // Main Core File
+import ButtersTerminal() // Allows Terminal Usage
+import ButtersWindows() // Windows Configuration allows to make windows
+
+// Setting Statment used for many things or hooking up things
+
+setp butters_maxscore '25'
+setp butters_startscore '0'
+
+pstring 'Real Age'
+pstring 'Cat Years'
+
+pint CatAge '2'
+pint RealYears '12'
+
+pfunc TerminalQuestions() {
+    terminal.start {
+        terminal.newconsole
+        terminal.name 'Cat Age Guesser'
+        terminal.userinput = true
+        terminal.qestionseq { // starts question sequence
+            questionseq.question1 'What is the age 2 in cat years to human years?',
+            questionseq.question2 'What is the age 12 in human years to cat years?'
+        }
+        terminal.finsh // terminal ending statment
+    }
+
+    if question1.setinput 'RealYears'
+        then question1.output 'Correct'
+
+    if not question1.input
+        then question1.output 'Incorrect'
+
+    if question2.setinput 'CatAge'
+        then question2.output 'Correct'
+
+    if not question.input
+        then question2.output 'Incorrect'
+}
+
+if question1.input
+    then console.text'Question 1 was awnsered correctly + butters_maxscore'
+
+if question2.input
+    then console.text'Question 2 was awnsered correctly + butters_maxscore'
+
+
+// Math Problems
+
+pint ButterNumber '5'
+pint ButtersNumber '10'
+
+// Letter Prefix Math
+setp bool MathProblem <ButterNumber ab ButtersNumber>
+
+// Traditional Math
+setp bool OtherProblem <ButterNumber + ButtersNumber>
+
+
+// Console Letter Prefix Math
+console.text'MathProblem'
+console.text'MathProblem mp MathProblem'
+console.text'MathProblem ab OtherProblem'
+
+// Console Traditional Math
+console.text'OtherProblem'
+console.text'OtherProblem * OtherProblem'
+console.text'OtherProblem + MathProblem'
+
+run.pfunc.(TerminalQuestions())
+
+return bts // Syntax checker

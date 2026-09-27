@@ -1,0 +1,30 @@
+{
+  "name": "bt",
+  "displayName": "butters",
+  "description": "This is the custom coding language made by the awsome developer butters",
+  "version": "0.0.3",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.138.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bt",
+      "aliases": ["butters", "bt"],
+      "extensions": [".bt"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./file-icon.png",
+        "dark": "./file-icon.png"
+      }
+    }],
+    "grammars": [{
+      "language": "bt",
+      "scopeName": "source.bt",
+      "path": "./syntaxes/bt.tmLanguage.json"
+    }]
+  }
+}
