@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # bt README
 
 This is the README for your extension "bt". After writing up a brief description, we recommend including the following sections.
@@ -63,3 +64,7 @@ You can author your README using Visual Studio Code. Here are some useful editor
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
+=======
+# Butters-Coding-Language
+This is the offical butters coding language working on an extension 
+>>>>>>> e00fe0bc30a7ba1b06dda83578f579a877b945c7
